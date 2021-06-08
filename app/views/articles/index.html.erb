@@ -1,0 +1,16 @@
+<h1>Articles List </h1>
+
+<ul>
+    <% @articles.each do |a|%>
+        
+        
+            <li style="font-size:25px">
+            <%= link_to a.title , a %>
+            
+            </li>
+            <br>
+        
+    <% end %>
+</ul>
+<p style="font-size:25px">
+<%= link_to "New Article" , new_article_path %></p>
